@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background: #ffbb00;
+  background: #7CBE30;
 }
 
 #app {
@@ -37,7 +37,7 @@ header p {
   margin: 1rem 0 0;
 }
 a {
-  color: black;
+  color: #000;
 }
 
 h1 {
@@ -109,8 +109,8 @@ div.container {
   }
 }
 .flex .progress.dark {
-  background: black;
-  color: #ffbb00;
+  background: #000;
+  color: #7CBE30;
 }
 @media (min-width: 780px) {
   .flex .progress {
@@ -131,9 +131,18 @@ div.container {
   margin: 0.5rem;
   width: calc(50% - 1rem);
 }
+
+.timeline > .double {
+  width: calc(100% - 1rem);
+}
+
 @media (min-width: 780px) {
   .timeline > div {
     width: calc(25% - 1rem);
+  }
+
+  .timeline > .double {
+    width: calc(50% - 1rem);
   }
 }
 
@@ -153,7 +162,7 @@ svg circle.prog {
   stroke: #000;
 }
 svg circle.bg {
-  stroke: rgba(0, 0, 0, 0.1);
+  stroke: rgba(0,0,0, 0.1);
 }
 
 .progress {
