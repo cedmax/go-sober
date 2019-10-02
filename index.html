@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      const href = window.location.href;
+      if (href[href.length - 1] !== '/') {
+        window.location.href = href + '/';
+      }
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="https://cedmax.com/gosober/favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <title>sober october</title>
     <meta
       name="description"
@@ -28,10 +34,10 @@
       name="og:description"
       content="keeping track of giving up booze for a little while."
     />
-    <meta name="og:url" content="https://cedmax.com/gosober" />
+    <meta name="og:url" content="https://cedmax.com/gosober/" />
     <meta name="og:site_name" content="sober october" />
     <meta name="og:type" content="website" />
-    <link rel="stylesheet" href="https://cedmax.com/gosober/app.css" />
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <div id="app">
@@ -184,6 +190,6 @@
         </div>
       </div>
     </div>
-    <script src="https://cedmax.com/gosober/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
