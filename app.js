@@ -18,7 +18,7 @@ const progresses = document.querySelectorAll('.progress[fraction]');
 update();
 
 function update() {
-  const now = new Date().getTime();
+  const now = 1572537814284; //new Date().getTime();
   const seconds = (now - data.time) / 1000;
   data.years = seconds / 31556952;
   data.months = seconds / 2592000;
@@ -38,7 +38,7 @@ function update() {
   document.getElementById('pounds').innerText = data.pounds;
   document.getElementById('cents').innerText = data.cents;
 
-  requestAnimationFrame(update);
+  //requestAnimationFrame(update);
 }
 
 function updatePies() {
