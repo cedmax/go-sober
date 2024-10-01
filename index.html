@@ -1,195 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      const href = window.location.href;
-      if (href[href.length - 1] !== '/') {
-        window.location.href = href + '/';
-      }
-    </script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="favicon.png" />
-    <title>sober october</title>
-    <meta
-      name="description"
-      content="keeping track of giving up booze for a little while."
-    />
-    <meta itemprop="name" content="sober october" />
-    <meta
-      itemprop="description"
-      content="keeping track of giving up booze for a little while."
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="sober october" />
-    <meta
-      name="twitter:description"
-      content="keeping track of giving up booze for a little while."
-    />
-    <meta name="twitter:site" content="@cedmax" />
-    <meta name="twitter:creator" content="@cedmax" />
-    <meta name="og:title" content="sober october" />
-    <meta
-      name="og:description"
-      content="keeping track of giving up booze for a little while."
-    />
-    <meta name="og:url" content="https://cedmax.com/gosober/" />
-    <meta name="og:site_name" content="sober october" />
-    <meta name="og:type" content="website" />
-    <link rel="stylesheet" href="app.css" />
-  </head>
-  <body>
-    <div id="app">
-      <header class="container">
-        <h1>sober october.</h1>
-        <p>
-          <a href="https://www.gosober.org.uk/users/marco-cedaro" target="blank"
-            >cedmax</a
-          >
-          keeping track of giving up booze for a little while.
-        </p>
-      </header>
-      <div class="container flex">
-        <div class="progress" fraction="seconds">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Seconds</h3>
-          </div>
-        </div>
-        <div class="progress" fraction="minutes">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Minutes</h3>
-          </div>
-        </div>
-        <div class="progress" fraction="hours">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Hours</h3>
-          </div>
-        </div>
-        <div class="progress" fraction="days">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Days</h3>
-          </div>
-        </div>
-      </div>
-      <div class="container flex">
-        <div class="progress" fraction="weeks">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Weeks</h3>
-          </div>
-        </div>
-        <div class="progress" fraction="months">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Months</h3>
-          </div>
-        </div>
-        <div class="progress" fraction="years">
-          <div class="left"></div>
-          <div class="right">
-            <h2></h2>
-            <h3>Years</h3>
-          </div>
-        </div>
-        <div class="progress dark">
-          <div class="right">
-            <h2>
-              <span>£<span id="pounds"></span></span
-              ><small>.<span id="cents"></span></small>
-            </h2>
-            <h3>Saved</h3>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="timeline">
-          <div>
-            <h3>1 Hour</h3>
-            <p>
-              Your liver starts working overtime, to prevent alcohol poisoning.
-            </p>
-          </div>
-          <div>
-            <h3>12 Hour</h3>
-            <p>
-              Your blood sugar has potentially normalised.
-            </p>
-          </div>
-          <div>
-            <h3>48 Hours</h3>
-            <p>
-              The worst is over by now; you may still feel groggy if you drank
-              much.
-            </p>
-          </div>
-          <div>
-            <h3>72 Hours</h3>
-            <p>
-              Any hangover side effects are now officially out of your system.
-            </p>
-          </div>
-          <div>
-            <h3>1 Week</h3>
-            <p>
-              You sleep more deeply, your energy increases, your skin looks
-              dewier, hydration restores.
-            </p>
-          </div>
-          <div>
-            <h3>1 Month</h3>
-            <p>
-              Your liver fat reduces by up to 20%, making it more efficent to
-              flush toxins, and your cholesterol drops up to 5%.
-            </p>
-          </div>
-          <div class="double">
-            <h3>1 Year</h3>
-            <p>
-              Weight loss, improved fitness, improved mood, increased
-              productivity and focus, increased ability to absorb vitamins and
-              minerals, reduced risk of cancer, decreased stress levels, quicker
-              immune response.
-            </p>
-          </div>
 
-          <p style="text-align: center;">
-            <small>
-              <a
-                href="https://www.oneyearnobeer.com/booze-free-what-happens-your-body-after-1-hour/"
-                target="blank"
-                rel="noopener noreferrer"
-                >oneyearnobeer.com</a
-              >
-              |
-              <a
-                href="https://jakequits.com/"
-                rel="noopener noreferrer"
-                target="blank"
-                >original idea</a
-              >
-              |
-              <a
-                href="https://github.com/cedmax/go-sober"
-                rel="noopener noreferrer"
-                target="blank"
-                >sober october fork</a
-              >
-            </small>
-          </p>
+<head>
+  <script>
+    const href = window.location.href;
+    if (href[href.length - 1] !== '/') {
+      window.location.href = href + '/';
+    }
+  </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="favicon.png" />
+  <title>sober october</title>
+  <meta name="description" content="keeping track of giving up booze for a little while." />
+  <meta itemprop="name" content="sober october" />
+  <meta itemprop="description" content="keeping track of giving up booze for a little while." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="sober october" />
+  <meta name="twitter:description" content="keeping track of giving up booze for a little while." />
+  <meta name="og:title" content="sober october" />
+  <meta name="og:description" content="keeping track of giving up booze for a little while." />
+  <meta name="og:url" content="https://cedmax.com/gosober/" />
+  <meta name="og:site_name" content="sober october" />
+  <meta name="og:type" content="website" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="container">
+      <h1>sober october.</h1>
+      <p>
+        <a href="https://cedmax.net" target="blank">cedmax</a>
+        keeping track of giving up booze for a little while.
+      </p>
+    </header>
+    <div class="container flex">
+      <div class="progress" fraction="seconds">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Seconds</h3>
+        </div>
+      </div>
+      <div class="progress" fraction="minutes">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Minutes</h3>
+        </div>
+      </div>
+      <div class="progress" fraction="hours">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Hours</h3>
+        </div>
+      </div>
+      <div class="progress" fraction="days">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Days</h3>
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
-  </body>
+    <div class="container flex">
+      <div class="progress" fraction="weeks">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Weeks</h3>
+        </div>
+      </div>
+      <div class="progress" fraction="months">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Months</h3>
+        </div>
+      </div>
+      <div class="progress" fraction="years">
+        <div class="left"></div>
+        <div class="right">
+          <h2></h2>
+          <h3>Years</h3>
+        </div>
+      </div>
+      <div class="progress dark">
+        <div class="right">
+          <h2>
+            <span>£<span id="pounds"></span></span><small>.<span id="cents"></span></small>
+          </h2>
+          <h3>Saved</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="timeline">
+        <div>
+          <h3>1 Hour</h3>
+          <p>
+            Your liver starts working overtime, to prevent alcohol poisoning.
+          </p>
+        </div>
+        <div>
+          <h3>12 Hour</h3>
+          <p>
+            Your blood sugar has potentially normalised.
+          </p>
+        </div>
+        <div>
+          <h3>48 Hours</h3>
+          <p>
+            The worst is over by now; you may still feel groggy if you drank
+            much.
+          </p>
+        </div>
+        <div>
+          <h3>72 Hours</h3>
+          <p>
+            Any hangover side effects are now officially out of your system.
+          </p>
+        </div>
+        <div>
+          <h3>1 Week</h3>
+          <p>
+            You sleep more deeply, your energy increases, your skin looks
+            dewier, hydration restores.
+          </p>
+        </div>
+        <div>
+          <h3>1 Month</h3>
+          <p>
+            Your liver fat reduces by up to 20%, making it more efficent to
+            flush toxins, and your cholesterol drops up to 5%.
+          </p>
+        </div>
+        <div class="double">
+          <h3>1 Year</h3>
+          <p>
+            Weight loss, improved fitness, improved mood, increased
+            productivity and focus, increased ability to absorb vitamins and
+            minerals, reduced risk of cancer, decreased stress levels, quicker
+            immune response.
+          </p>
+        </div>
+
+        <p style="text-align: center;">
+          <small>
+            <a href="https://www.oneyearnobeer.com/blog/what-happens-when-you-stop-drinking/" target="blank"
+              rel="noopener noreferrer">oneyearnobeer.com</a>
+            |
+            <a href="https://jakequits.com/" rel="noopener noreferrer" target="blank">original idea</a>
+            |
+            <a href="https://github.com/cedmax/go-sober" rel="noopener noreferrer" target="blank">sober october fork</a>
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -9,8 +9,8 @@ const data = {
   savings: null,
   pounds: null,
   cents: null,
-  dailyCost: 5,
-  time: new Date(2019, 8, 29, 00), // new Date(2019, 8, 24, 19)
+  dailyCost: 6.5,
+  time: new Date(2024, 8, 29, 17, 30), // new Date(2019, 8, 24, 19)
 };
 
 const progresses = document.querySelectorAll('.progress[fraction]');
@@ -18,7 +18,7 @@ const progresses = document.querySelectorAll('.progress[fraction]');
 update();
 
 function update() {
-  const now = 1572537814284; //new Date().getTime();
+  const now = new Date().getTime(); // 1727787543059;
   const seconds = (now - data.time) / 1000;
   data.years = seconds / 31556952;
   data.months = seconds / 2592000;
