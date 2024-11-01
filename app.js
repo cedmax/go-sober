@@ -18,7 +18,7 @@ const progresses = document.querySelectorAll('.progress[fraction]');
 update();
 
 function update() {
-  const now = new Date().getTime(); // 1727787543059;
+  const now = 1730490663652; //new Date().getTime(); // 1727787543059;
   const seconds = (now - data.time) / 1000;
   data.years = seconds / 31556952;
   data.months = seconds / 2592000;
